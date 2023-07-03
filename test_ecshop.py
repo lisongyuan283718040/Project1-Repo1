@@ -20,9 +20,12 @@ class TestEcshop(unittest.TestCase):
         print('test case3')
 
 if __name__ == '__main__':
+    # TestEcshop.test_01_case1(self="test_01_case1")
+    # TestEcshop.test_02_case2(self="test_02_case2")
+    # TestEcshop.test_03_case3(self="test_03_case3")
     current_path = os.getcwd()
     # print("current_path is: " + current_path) # for debug
-    suite = unittest.defaultTestLoader.discover(current_path, '*.py')
+    suite = unittest.defaultTestLoader.discover(current_path, 'test_ecshop.py')
     abs_file = current_path + '\\' + r'report.html'
     # print("abs_file is: " + abs_file) # for debug
     files = open(abs_file, 'wb')
