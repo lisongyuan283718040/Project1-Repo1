@@ -25,3 +25,4 @@ class websitUser(HttpUser):
 if __name__ == "__main__":
     import os
     os.system("locust -f mainlocust2.py --host=https://www.cnblogs.com")
+    """浏览器访问：http://localhost:8089/"""
