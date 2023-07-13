@@ -16,11 +16,8 @@ class EmailManage:
         message = MIMEMultipart('related')
         subject = 'PythonSentMultipleReports'
         attachment = MIMEText(open(report_name, 'rb').read(), 'html', 'utf-8') # 附件
-
         # 把邮件的信息组装到邮件对象里面
         message['from'] = username
-        # print(receiver)
-        # print(type(receiver))
         message['to'] = receivers
         message['subject'] = subject
         message.attach(attachment)
