@@ -12,17 +12,17 @@ class TestEcshop(unittest.TestCase):
 
     def test_01_case1(self):
         print('test case1')
+        assert 1 == 1
 
     def test_02_case2(self):
         print('test case2')
+        assert 'xa' in '123xa890'
 
     def test_03_case3(self):
         print('test case3')
+        assert 2 == 3
 
 if __name__ == '__main__':
-    # TestEcshop.test_01_case1(self="test_01_case1")
-    # TestEcshop.test_02_case2(self="test_02_case2")
-    # TestEcshop.test_03_case3(self="test_03_case3")
     current_path = os.getcwd()
     # print("current_path is: " + current_path) # for debug
     suite = unittest.defaultTestLoader.discover(current_path, 'test_ecshop.py')
